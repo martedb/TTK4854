@@ -8,80 +8,97 @@
 </head>
 <body>
 
-    <header>
-        <div class="hero">
-            <h1>GhostNetBusters</h1>
-            <p>Mapping and prioritizing ghost net removal to protect marine biodiversity.</p>
-            <a href="#map" class="btn">Explore the Map</a>
-        </div>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="map.html">View Map</a>
-    </nav>
-
-    <div class="container">
-        <section id="map">
-            <h2>Interactive Map of Ghost Net Locations</h2>
-            <p>
-                Our interactive map allows you to explore the locations of <strong>ghost nets</strong> across various marine regions.<br><br>
-                Additionally, the map includes a <strong>prioritization tool</strong> that allows you to adjust settings to highlight areas of concern.<br><br>
-                By using this map, you can better understand the spread of ghost nets and contribute to focused, data-driven efforts.
-            </p>
-
-            <iframe src="norway_ghost_nets_map.html" loading="lazy"></iframe>
-
-            <h3>Priority Areas for Ghost Net Removal</h3>
-
-            <!-- Info Boxes -->
-            <div class="info-box-container">
-
-                <div class="info-box protected">
-                    <h4>Protected Areas</h4>
-                    <p>
-                        Protected areas are regions in which human activity is limited due to their natural or cultural value.
-                    </p>
-                    <p><strong>Further reading:</strong></p>
-                    <a href="https://www.fiskeridir.no/English/Coastal-management/Marine-protected-areas"
-                       target="_blank" class="info-link">
-                       Marine protected areas – Directorate of Fisheries
-                    </a>
-                </div>
-
-                <div class="info-box redlist">
-                    <h4>Red-list species habitats</h4>
-                    <p>
-                        The red list identifies habitats and species at risk of extinction or disappearance from marine ecosystems.
-                    </p>
-                    <p><strong>Further reading:</strong><br>…</p>
-                </div>
-
-                <div class="info-box spawning">
-                    <h4>Spawning Areas</h4>
-                    <p>
-                        Spawning areas are where fish lay their eggs and hatch. These zones are crucial for reproduction and early development.
-                        Nets in these areas pose a significant risk to vulnerable individuals, and decomposing fish can attract more entanglement.
-                    </p>
-                    <p><strong>Further reading:</strong><br>…</p>
-                </div>
-
-                <div class="info-box kelp">
-                    <h4>Kelp forests</h4>
-                    <p>
-                        Kelp forests are especially productive ecosystems with a large <strong>diversity of species</strong>.
-                        However, they are shrinking due to pollution and other stressors. These areas tend to attract ghost nets, worsening the impact.
-                    </p>
-                    <p><strong>Further reading:</strong><br>…</p>
-                </div>
-
-            </div>
-        </section>
+<header>
+    <div class="hero">
+        <h1>Explore the Ocean Map</h1>
+        <p>Visualize ghost net locations and prioritize clean-up efforts based on ecological impact.</p>
     </div>
+</header>
 
-    <footer>
-        <p>© 2025 GhostNetBusters | Protecting Marine Life</p>
-    </footer>
+<nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About GhostNets</a>
+      <a href="map.html">View Map</a>
+    </div>
+  </nav>
+  
+
+<div class="container">
+<section id="map">
+    <h2>Interactive Map of Ghost Net Locations</h2>
+    <p>
+      We created this map to give a better overview of where ghost nets have been found along the Norwegian coast. The goal is to make the problem more visible and easier to understand through an interactive experience.
+      <br><br>
+      You can toggle different <strong>map layers</strong> that highlight areas of ecological importance, such as <strong>protected zones (blue)</strong>, <strong>spawning areas (orange)</strong>, <strong>kelp forests (green)</strong>, and <strong>red-listed species habitats (red)</strong>. While not all of these layers are included yet, the color coding still reflects the structure shown in the info boxes.
+      <br><br>
+      Ghost nets are marked with <strong>grey circles</strong>. Clicking on a dot gives you more insight into how many nets were found in that spot. The <strong>size of each dot</strong> corresponds to the number of nets at that specific location—larger circles mean more nets. Ghost nets marked in <strong> red</strong> can be found in one of the areas of importance that are shown on the map. 
+      <br><br>
+      There’s also a <strong>toggleable heatmap</strong> that gives a quick overview of where ghost nets are most concentrated across Norway, making it easier to identify hotspots.
+      <br><br>
+      This map is part of a student-led project to raise awareness about ghost nets and to highlight how they impact marine ecosystems. We hope it encourages curiosity and maybe even inspires further action.
+    </p>
+        <iframe src="norway_ghost_nets_map.html" loading="lazy"></iframe>
+        
+
+        <h3>Priority Areas for Ghost Net Removal</h3>
+
+        <!-- Info Boxes -->
+	<div class="info-box-container">
+    	<div class="info-box protected">
+        	<h4>Protected Areas</h4>
+        	<p>Protected areas are areas in which human presence is limited due to its natural or cultural values. Norway has more than <strong>3300 </strong>protected areas, with <strong>17.7%</strong> of the mainland and <strong>4.5%</strong> of the sea area being protected. Protected areas can often contain the other types of areas described on this page, having endangered species, spawning areas and ecologically rich environments which could be harmed by the lost nets.
+
+<br><br><p><strong>Further reading:</strong></p>
+<a href="https://www.fiskeridir.no/English/Coastal-management/Marine-protected-areas" 
+   target="_blank" class="info-link">
+   Marine protected areas – Directorate of Fisheries
+</a>
+
+    	</div>
+
+    	<div class="info-box redlist">
+        	<h4>Red-list species habitats</h4>
+        	<p>The red list is a list that contains habitats and species at risk of extinction or disappearance from a geographical area. Norway’s red list contains almost <strong>5000</strong> species. As there are so few individuals left of these species, the areas in which they reside become more important to protect.
+
+<br><br> Further reading: </strong></p>
+<a href="https://artsdatabanken.no/Pages/317608/What_is_the_Red_List" 
+   target="_blank" class="info-link">
+   What is the Red List of Ecosystem Types? - Artsdatabanken
+</a>
+    	</div>
+
+    	<div class="info-box spawning">
+        	<h4>Spawning Areas</h4>
+        	<p>Spawning areas are where the fish lay their eggs and the new fish hatch. These areas are therefore vital for maintaining a <strong>healthy population of fish</strong>, as newly hatched fish are particularly vulnerable to predation and environmental factors.
+Nets in spawning areas will thus be a danger to vulnerable individuals, and furthermore, the presence of decomposing fish in nets may cause spawning fish to avoid these areas, leading them to lay their eggs in less ideal places.
+<br><br>
+Further reading:</strong></p>
+<a href="https://www.hi.no/en/hi/temasider/species/herring" 
+   target="_blank" class="info-link">
+   Norwegian spring spawning areas - Institute of Marine Research
+</a>
+    	</div>
+
+    	<div class="info-box kelp">
+        	<h4>Kelp forests</h4>
+        	<p>Kelp forests are especially productive ecosystems with a large <strong>diversity of species</strong>. There could be several hundred different species of fish, algae, crustaceans and other marine animals tied to a single forest. Norway especially has a lot of these forests along its long coast, being the country in Europe with the most extensive coverage. 
+Kelp forests are however decreasing in size and number, and pollusion is a big part of this problem. They seem to be hot-spots for accumulation of plastics and microplastics.
+
+<br><br>Further reading:
+</strong></p>
+<a href="https://nbfn.no/kelp/" 
+   target="_blank" class="info-link">
+   What are Kelp forests? - Norwegian Blue Forests Network
+</a>
+    	</div>
+	</div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2025 GhostNetBusters | Protecting Marine Life</p>
+</footer>
 
 </body>
 </html>

@@ -5,85 +5,124 @@ body {
     padding: 0;
     background-color: #F5F5F5;
     color: #333;
-}
-
-/* Hero Section */
-.hero {
-    background: url('ocean-cleanup.jpg') no-repeat center center/cover;
+  }
+  
+  p {
+    font-size: 1.2rem; /* ~17.6px */
+    line-height: 1.6;   /* Improves readability */
+  }
+  
+  .container li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    background: url('background.jpg') no-repeat center center/cover;
     text-align: center;
     color: white;
     padding: 100px 20px;
-}
-.hero h1 {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
     font-size: 3em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-.hero p {
+  }
+  .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
-}
-.btn {
-    background-color: #00A8CC;
+  }
+  
+  .btn {
+    background-color: #003366; /* match nav bar */
     color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
+    padding: 16px 32px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s ease-in-out;
-}
-.btn:hover {
-    background-color: #007B9A;
-}
-
-/* Navigation Bar */
-nav {
-    background: #003366;
-    padding: 15px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #005999;
+    transform: scale(1.05);
+  }
+  
+  
+  nav {
+    background: rgba(0, 51, 102, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 15px 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the nav items */
+    gap: 40px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-nav a {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    transition: 0.3s;
-}
-nav a:hover {
+    font-weight: 600;
+    padding: 10px 18px;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 6px;
+    font-size: 1.1rem;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
     color: #00A8CC;
-}
-
-/* Map Section */
-.container {
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  
+  /* Map Section */
+  .container {
     max-width: 90%;
     margin: 100px auto 20px;
     padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Full-Width Map */
-#map {
+  }
+  
+  /* Full-Width Map */
+  #map {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-}
-#map iframe {
+  }
+  #map iframe {
     width: 85vw; /* Full viewport width */
     height: 75vh; /* 75% of the screen height */
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     display: block;
     margin: 0 auto; /* Centering */
-}
-
-/* Ensure full width for the section */
-.info-box-container {
+  }
+  
+  /* Ensure full width for the section */
+  .info-box-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr)); /* Exactly two equal columns */
     gap: 20px; /* Space between boxes */
@@ -91,10 +130,12 @@ nav a:hover {
     max-width: 1200px; /* Optional: Limits max width for better aesthetics */
     margin: auto; /* Centers container */
     padding: 0 20px; /* Adds slight padding for better layout */
-}
-
-/* Individual Info Box */
-.info-box {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Individual Info Box */
+  .info-box {
     background: #f0f8ff;
     border-left: 5px solid #00A8CC; /* Left accent border */
     padding: 15px;
@@ -103,58 +144,58 @@ nav a:hover {
     box-sizing: border-box;
     width: 100%; /* Ensures it fully fills the grid column */
     transition: all 0.3s ease-in-out; /* Smooth resizing */
-}
-
-/* If there's an odd number of boxes, make the last one span full width */
-.info-box:last-child:nth-child(odd) {
+  }
+  
+  /* If there's an odd number of boxes, make the last one span full width */
+  .info-box:last-child:nth-child(odd) {
     grid-column: span 2;
-}
-
-/* Info Box Typography */
-.info-box h4 {
+  }
+  
+  /* Info Box Typography */
+  .info-box h4 {
     margin: 0 0 10px 0;
     color: #003366;
-}
-
-.info-box p {
+  }
+  
+  .info-box p {
     margin: 0;
     font-size: 0.95em;
     color: #333;
-}
-/* Colored borders and subtle background tints for each area type */
-.info-box.protected {
+  }
+  /* Colored borders and subtle background tints for each area type */
+  .info-box.protected {
     border-left: 5px solid blue;
     background-color: rgba(173, 216, 230, 0.2); /* light blue tint */
-}
-
-.info-box.redlist {
+  }
+  
+  .info-box.redlist {
     border-left: 5px solid red;
     background-color: rgba(255, 99, 71, 0.15); /* light red tint */
-}
-
-.info-box.spawning {
+  }
+  
+  .info-box.spawning {
     border-left: 5px solid orange;
     background-color: rgba(255, 165, 0, 0.15); /* light orange tint */
-}
-
-.info-box.kelp {
+  }
+  
+  .info-box.kelp {
     border-left: 5px solid green;
     background-color: rgba(144, 238, 144, 0.2); /* light green tint */
-}
-
-
-/* Responsive: Switch to one column on small screens */
-@media (max-width: 768px) {
+  }
+  
+  
+  /* Responsive: Switch to one column on small screens */
+  @media (max-width: 768px) {
     .info-box-container {
         grid-template-columns: 1fr; /* Only one column on smaller screens */
     }
-
+  
     .info-box:last-child:nth-child(odd) {
         grid-column: span 1; /* Reset to normal width */
     }
-}
-
-.info-link {
+  }
+  
+  .info-link {
     display: inline-block;
     margin-top: 5px;
     color: #003366;
@@ -162,22 +203,22 @@ nav a:hover {
     text-decoration: none;
     border-bottom: 2px solid #003366;
     transition: 0.2s ease-in-out;
-}
-.info-link:hover {
+  }
+  .info-link:hover {
     color: #00A8CC;
     border-bottom-color: #00A8CC;
-}
-
-
-/* Footer */
-footer {
+  }
+  
+  
+  /* Footer */
+  footer {
     background: #003366;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 50px;
-}
-footer a {
+  }
+  footer a {
     color: #00A8CC;
     text-decoration: none;
-}
+  }
