@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostNetBusters - Interactive Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>GhostNetBusters</h1>
+            <p>Mapping and prioritizing ghost net removal to protect marine biodiversity.</p>
+            <a href="#map" class="btn">Explore the Map</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="map.html">View Map</a>
+    </nav>
+
+    <div class="container">
+        <section id="map">
+            <h2>Interactive Map of Ghost Net Locations</h2>
+            <p>
+                Our interactive map allows you to explore the locations of <strong>ghost nets</strong> across various marine regions.<br><br>
+                Additionally, the map includes a <strong>prioritization tool</strong> that allows you to adjust settings to highlight areas of concern.<br><br>
+                By using this map, you can better understand the spread of ghost nets and contribute to focused, data-driven efforts.
+            </p>
+
+            <iframe src="norway_ghost_nets_map.html" loading="lazy"></iframe>
+
+            <h3>Priority Areas for Ghost Net Removal</h3>
+
+            <!-- Info Boxes -->
+            <div class="info-box-container">
+
+                <div class="info-box protected">
+                    <h4>Protected Areas</h4>
+                    <p>
+                        Protected areas are regions in which human activity is limited due to their natural or cultural value.
+                    </p>
+                    <p><strong>Further reading:</strong></p>
+                    <a href="https://www.fiskeridir.no/English/Coastal-management/Marine-protected-areas"
+                       target="_blank" class="info-link">
+                       Marine protected areas – Directorate of Fisheries
+                    </a>
+                </div>
+
+                <div class="info-box redlist">
+                    <h4>Red-list species habitats</h4>
+                    <p>
+                        The red list identifies habitats and species at risk of extinction or disappearance from marine ecosystems.
+                    </p>
+                    <p><strong>Further reading:</strong><br>…</p>
+                </div>
+
+                <div class="info-box spawning">
+                    <h4>Spawning Areas</h4>
+                    <p>
+                        Spawning areas are where fish lay their eggs and hatch. These zones are crucial for reproduction and early development.
+                        Nets in these areas pose a significant risk to vulnerable individuals, and decomposing fish can attract more entanglement.
+                    </p>
+                    <p><strong>Further reading:</strong><br>…</p>
+                </div>
+
+                <div class="info-box kelp">
+                    <h4>Kelp forests</h4>
+                    <p>
+                        Kelp forests are especially productive ecosystems with a large <strong>diversity of species</strong>.
+                        However, they are shrinking due to pollution and other stressors. These areas tend to attract ghost nets, worsening the impact.
+                    </p>
+                    <p><strong>Further reading:</strong><br>…</p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 GhostNetBusters | Protecting Marine Life</p>
+    </footer>
+
+</body>
+</html>
