@@ -1,4 +1,4 @@
-# GhostNetBusters 🌊
+# GhostNetBusters 
 
 This is a project we've been working on to map ghost nets along the Norwegian coast and highlight areas where removal should be prioritized. It’s a small web-based tool that combines interactive maps with data layers like spawning areas, kelp forests, and protected marine zones.
 
